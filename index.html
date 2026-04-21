@@ -12,46 +12,112 @@
   </head>
   <body>
     <main class="page">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="AI-Cabulary home">
+          <span class="brand-mark">
+            <img src="assets/app-icon.png" alt="AI-Cabulary app icon">
+          </span>
+          <span class="brand-copy">
+            <span class="eyebrow">AI-Cabulary</span>
+            <span class="brand-title">On-device vocabulary study</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Site">
+          <a class="nav-link" href="testflight.html">TestFlight</a>
+          <a class="nav-link" href="privacy.html">Privacy</a>
+          <a class="nav-link" href="support.html">Support</a>
+        </nav>
+      </header>
+
       <section class="hero">
-        <p class="eyebrow">AI-Cabulary</p>
-        <h1>On-device vocabulary practice for iPhone, iPad, and Mac.</h1>
-        <p class="lede">
-          Build study cards from words, phrases, typed context, and OCR from images. AI-Cabulary
-          generates translations, explanations, and examples while keeping the learning flow local to
-          your device.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="testflight.html">Join TestFlight</a>
-          <a class="button" href="support.html">Support</a>
+        <div class="hero-copy">
+          <p class="hero-badge">Local AI • OCR context • iPhone, iPad, and Mac</p>
+          <h1>Build vocabulary cards from the language you actually see.</h1>
+          <p class="lede">
+            AI-Cabulary turns words, phrases, typed notes, and image text into reusable study cards
+            with on-device translations, explanations, examples, and lightweight practice.
+          </p>
+
+          <div class="pill-row" aria-label="Highlights">
+            <span class="pill">Camera and photo OCR</span>
+            <span class="pill">On-device model workflow</span>
+            <span class="pill">Tags and focused review</span>
+          </div>
+
+          <div class="actions">
+            <a class="button primary" href="testflight.html">Join TestFlight</a>
+            <a class="button secondary" href="support.html">Get support</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="showcase">
+            <div class="showcase-top">
+              <div class="showcase-copy">
+                <small>App preview</small>
+                <strong>Vocabulary capture, context, and practice in one place.</strong>
+              </div>
+              <div class="showcase-icon">
+                <img src="assets/app-icon.png" alt="AI-Cabulary logo">
+              </div>
+            </div>
+
+            <div class="meta-grid">
+              <article class="meta-card">
+                <span class="meta-label">What it does</span>
+                <p class="meta-value">Creates study-ready vocabulary entries with context-aware explanations.</p>
+              </article>
+              <article class="meta-card">
+                <span class="meta-label">How it works</span>
+                <p class="meta-value">Keeps the learning flow local to supported Apple hardware.</p>
+              </article>
+              <article class="meta-card">
+                <span class="meta-label">Inputs</span>
+                <p class="meta-value">Typed text, pasted images, photo library images, and camera capture.</p>
+              </article>
+              <article class="meta-card">
+                <span class="meta-label">Release path</span>
+                <p class="meta-value">Internal and external TestFlight before App Store review.</p>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
+      <div class="section-heading">
+        <h2>Why people use it</h2>
+        <p>AI-Cabulary is built for learners who want to study real phrases with real context, not isolated dictionary lookups.</p>
+      </div>
+
       <section class="grid">
         <article class="card">
-          <h2>What it does</h2>
+          <h2>Keep the original context</h2>
           <p>
-            AI-Cabulary helps language learners turn vocabulary into reusable study cards with
-            translations, explanations, examples, tags, and lightweight practice.
+            Capture the sentence, phrase, sign, screenshot, or note that made the word interesting in
+            the first place.
           </p>
         </article>
         <article class="card">
-          <h2>How it works</h2>
+          <h2>Study meaning, not just translation</h2>
           <p>
-            The app warms a local model on supported Apple hardware, reads optional context from
-            photos or camera images, and stores your vocabulary library on device.
+            Review explanations and examples that make idioms, tone, and usage easier to remember.
           </p>
         </article>
         <article class="card">
-          <h2>Platforms</h2>
+          <h2>Stay on your device</h2>
           <p>
-            The current release plan targets iPhone, iPad, and Mac, with TestFlight distribution
-            before App Store review.
+            The app is designed around local analysis on supported Apple hardware, with optional model
+            downloads during setup.
           </p>
         </article>
       </section>
 
-      <section class="card">
-        <h2>Documentation</h2>
+      <section class="card list-card">
+        <div class="section-heading">
+          <h2>Documentation</h2>
+          <p>Everything needed for TestFlight access, support, and App Store privacy requirements.</p>
+        </div>
         <ul class="links">
           <li><a href="testflight.html">TestFlight access and install guide</a></li>
           <li><a href="privacy.html">Privacy policy</a></li>
