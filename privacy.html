@@ -4,60 +4,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy | AI-Cabulary</title>
-    <link rel="stylesheet" href="styles.css">
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  teal: "#23899a",
+                  tealDark: "#165f6c",
+                  ink: "#163042",
+                  mist: "#eef7fb"
+                }
+              },
+              boxShadow: {
+                soft: "0 24px 60px rgba(22, 48, 66, 0.12)"
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <main class="page narrow">
-      <header class="site-header">
-        <a class="brand" href="index.html" aria-label="AI-Cabulary home">
-          <span class="brand-mark">
-            <img src="assets/app-icon.png" alt="AI-Cabulary app icon">
-          </span>
-          <span class="brand-copy">
-            <span class="eyebrow">AI-Cabulary</span>
-            <span class="brand-title">On-device vocabulary study</span>
-          </span>
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(166,220,255,0.5),_transparent_26%),linear-gradient(180deg,_#f9fcff_0%,_#eef7fb_58%,_#fff7ef_100%)] text-brand-ink">
+    <main class="mx-auto w-full max-w-4xl px-5 pb-16 pt-6 sm:px-6 lg:px-8">
+      <header class="mb-6 flex flex-col gap-4 rounded-[28px] border border-white/70 bg-white/80 px-5 py-4 shadow-soft backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+        <a class="flex items-center gap-4" href="index.html" aria-label="AI-Cabulary home">
+          <img class="h-14 w-14 rounded-2xl border border-white/80 shadow-lg shadow-sky-100/80" src="assets/app-icon.png" alt="AI-Cabulary app icon">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">AI-Cabulary</p>
+            <p class="text-base font-semibold text-slate-700">On-device vocabulary study</p>
+          </div>
         </a>
-
-        <nav class="site-nav" aria-label="Site">
-          <a class="nav-link" href="testflight.html">TestFlight</a>
-          <a class="nav-link" href="support.html">Support</a>
+        <nav class="flex flex-wrap gap-2 text-sm font-medium">
+          <a class="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="testflight.html">TestFlight</a>
+          <a class="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="support.html">Support</a>
         </nav>
       </header>
 
-      <p class="back-row"><a class="back-link" href="index.html">Back to home</a></p>
+      <p class="mb-4">
+        <a class="inline-flex rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="index.html">Back to home</a>
+      </p>
 
-      <section class="card page-intro">
-        <p class="eyebrow">Privacy</p>
-        <h1>Privacy Policy</h1>
-        <p class="lede">Effective date: April 21, 2026</p>
+      <section class="rounded-[30px] border border-white/70 bg-white/80 p-7 shadow-soft backdrop-blur sm:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">Privacy</p>
+        <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">Privacy Policy</h1>
+        <p class="mt-3 text-base text-slate-600">Effective date: April 21, 2026</p>
       </section>
 
-      <section class="card prose">
-        <p>
-          AI-Cabulary is designed to help users create and practice vocabulary cards on Apple devices.
-        </p>
-        <p>
-          Vocabulary entries, tags, and generated study content are stored locally on the user’s device.
-          The app can optionally read text from user-selected images, camera captures, and pasted images
-          to improve context for vocabulary analysis.
-        </p>
-        <p>
-          Vocabulary analysis runs on device. On first model preparation, the app may download model
-          assets from third-party hosting sources such as Hugging Face or MLX Community in order to make
-          local analysis available.
-        </p>
-        <p>
-          AI-Cabulary does not provide advertising, does not use tracking for cross-app or cross-site
-          behavior, and is not intended to sell personal data.
-        </p>
-        <p>
-          Camera access is optional and only used when a user chooses to capture an image for OCR-based
-          context extraction.
-        </p>
-        <p>
-          If you have privacy questions, contact <a href="mailto:jade@ornelas.io">jade@ornelas.io</a>.
-        </p>
+      <section class="mt-6 rounded-[30px] border border-white/70 bg-white/80 p-7 shadow-soft backdrop-blur sm:p-8">
+        <div class="space-y-5 text-base leading-8 text-slate-600">
+          <p>AI-Cabulary is designed to help users create and practice vocabulary cards on Apple devices.</p>
+          <p>Vocabulary entries, tags, and generated study content are stored locally on the user’s device. The app can optionally read text from user-selected images, camera captures, and pasted images to improve context for vocabulary analysis.</p>
+          <p>Vocabulary analysis runs on device. On first model preparation, the app may download model assets from third-party hosting sources such as Hugging Face or MLX Community in order to make local analysis available.</p>
+          <p>AI-Cabulary does not provide advertising, does not use tracking for cross-app or cross-site behavior, and is not intended to sell personal data.</p>
+          <p>Camera access is optional and only used when a user chooses to capture an image for OCR-based context extraction.</p>
+          <p>If you have privacy questions, contact <a class="font-semibold text-brand-tealDark underline decoration-brand-teal/40 underline-offset-4" href="mailto:jade@ornelas.io">jade@ornelas.io</a>.</p>
+        </div>
       </section>
     </main>
   </body>

@@ -8,121 +8,154 @@
       name="description"
       content="AI-Cabulary is an on-device vocabulary practice app for iPhone, iPad, and Mac."
     >
-    <link rel="stylesheet" href="styles.css">
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  teal: "#23899a",
+                  tealDark: "#165f6c",
+                  ink: "#163042",
+                  mist: "#eef7fb",
+                  peach: "#fff1e8"
+                }
+              },
+              boxShadow: {
+                soft: "0 24px 60px rgba(22, 48, 66, 0.12)"
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <main class="page">
-      <header class="site-header">
-        <a class="brand" href="index.html" aria-label="AI-Cabulary home">
-          <span class="brand-mark">
-            <img src="assets/app-icon.png" alt="AI-Cabulary app icon">
-          </span>
-          <span class="brand-copy">
-            <span class="eyebrow">AI-Cabulary</span>
-            <span class="brand-title">On-device vocabulary study</span>
-          </span>
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(166,220,255,0.55),_transparent_28%),radial-gradient(circle_at_top_right,_rgba(255,200,220,0.52),_transparent_28%),linear-gradient(180deg,_#f9fcff_0%,_#eef7fb_52%,_#fff7ef_100%)] text-brand-ink">
+    <main class="mx-auto w-full max-w-6xl px-5 pb-16 pt-6 sm:px-6 lg:px-8">
+      <header class="mb-6 flex flex-col gap-4 rounded-[28px] border border-white/70 bg-white/75 px-5 py-4 shadow-soft backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+        <a class="flex items-center gap-4" href="index.html" aria-label="AI-Cabulary home">
+          <img
+            class="h-14 w-14 rounded-2xl border border-white/80 shadow-lg shadow-sky-100/80"
+            src="assets/app-icon.png"
+            alt="AI-Cabulary app icon"
+          >
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">AI-Cabulary</p>
+            <p class="text-base font-semibold text-slate-700">On-device vocabulary study</p>
+          </div>
         </a>
 
-        <nav class="site-nav" aria-label="Site">
-          <a class="nav-link" href="testflight.html">TestFlight</a>
-          <a class="nav-link" href="privacy.html">Privacy</a>
-          <a class="nav-link" href="support.html">Support</a>
+        <nav class="flex flex-wrap gap-2 text-sm font-medium">
+          <a class="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="testflight.html">TestFlight</a>
+          <a class="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="privacy.html">Privacy</a>
+          <a class="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-slate-600 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="support.html">Support</a>
         </nav>
       </header>
 
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="hero-badge">Local AI • OCR context • iPhone, iPad, and Mac</p>
-          <h1>Build vocabulary cards from the language you actually see.</h1>
-          <p class="lede">
+      <section class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div class="rounded-[32px] border border-white/70 bg-white/80 p-7 shadow-soft backdrop-blur sm:p-9">
+          <div class="mb-4 inline-flex rounded-full bg-brand-teal/10 px-4 py-2 text-sm font-semibold text-brand-tealDark">
+            Local AI • OCR context • iPhone, iPad, and Mac
+          </div>
+          <h1 class="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+            Build vocabulary cards from the language you actually see.
+          </h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
             AI-Cabulary turns words, phrases, typed notes, and image text into reusable study cards
             with on-device translations, explanations, examples, and lightweight practice.
           </p>
 
-          <div class="pill-row" aria-label="Highlights">
-            <span class="pill">Camera and photo OCR</span>
-            <span class="pill">On-device model workflow</span>
-            <span class="pill">Tags and focused review</span>
+          <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
+            <span class="rounded-full border border-sky-100 bg-white px-4 py-2">Camera and photo OCR</span>
+            <span class="rounded-full border border-sky-100 bg-white px-4 py-2">On-device model workflow</span>
+            <span class="rounded-full border border-sky-100 bg-white px-4 py-2">Tags and focused review</span>
           </div>
 
-          <div class="actions">
-            <a class="button primary" href="testflight.html">Join TestFlight</a>
-            <a class="button secondary" href="support.html">Get support</a>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="rounded-full bg-brand-teal px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-200/70 transition hover:bg-brand-tealDark" href="testflight.html">Join TestFlight</a>
+            <a class="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="support.html">Get support</a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="showcase">
-            <div class="showcase-top">
-              <div class="showcase-copy">
-                <small>App preview</small>
-                <strong>Vocabulary capture, context, and practice in one place.</strong>
-              </div>
-              <div class="showcase-icon">
-                <img src="assets/app-icon.png" alt="AI-Cabulary logo">
-              </div>
+        <aside class="rounded-[32px] border border-white/70 bg-white/80 p-6 shadow-soft backdrop-blur sm:p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">App preview</p>
+              <h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-950">Vocabulary capture, context, and practice in one place.</h2>
             </div>
-
-            <div class="meta-grid">
-              <article class="meta-card">
-                <span class="meta-label">What it does</span>
-                <p class="meta-value">Creates study-ready vocabulary entries with context-aware explanations.</p>
-              </article>
-              <article class="meta-card">
-                <span class="meta-label">How it works</span>
-                <p class="meta-value">Keeps the learning flow local to supported Apple hardware.</p>
-              </article>
-              <article class="meta-card">
-                <span class="meta-label">Inputs</span>
-                <p class="meta-value">Typed text, pasted images, photo library images, and camera capture.</p>
-              </article>
-              <article class="meta-card">
-                <span class="meta-label">Release path</span>
-                <p class="meta-value">Internal and external TestFlight before App Store review.</p>
-              </article>
-            </div>
+            <img class="h-24 w-24 rounded-[28px] border border-white/80 shadow-lg shadow-sky-100/80" src="assets/app-icon.png" alt="AI-Cabulary logo">
           </div>
+
+          <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <article class="rounded-3xl bg-brand-mist px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-tealDark">What it does</p>
+              <p class="mt-2 text-sm leading-6 text-slate-700">Creates study-ready entries with context-aware explanations.</p>
+            </article>
+            <article class="rounded-3xl bg-white px-4 py-4 ring-1 ring-slate-100">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-tealDark">How it works</p>
+              <p class="mt-2 text-sm leading-6 text-slate-700">Keeps the learning flow local to supported Apple hardware.</p>
+            </article>
+            <article class="rounded-3xl bg-white px-4 py-4 ring-1 ring-slate-100">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-tealDark">Inputs</p>
+              <p class="mt-2 text-sm leading-6 text-slate-700">Typed text, pasted images, photo library images, and camera capture.</p>
+            </article>
+            <article class="rounded-3xl bg-brand-peach px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-tealDark">Release path</p>
+              <p class="mt-2 text-sm leading-6 text-slate-700">Internal and external TestFlight before App Store review.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="mt-10">
+        <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">Why people use it</p>
+            <h2 class="mt-2 text-3xl font-semibold tracking-tight text-slate-950">Built for studying real phrases with real context.</h2>
+          </div>
+          <p class="max-w-2xl text-sm leading-7 text-slate-600">
+            AI-Cabulary is for learners who want more than isolated dictionary lookups. Save the phrase,
+            the context, and the explanation in one place.
+          </p>
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-3">
+          <article class="rounded-[28px] border border-white/70 bg-white/80 p-6 shadow-soft backdrop-blur">
+            <h3 class="text-xl font-semibold tracking-tight text-slate-950">Keep the original context</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Capture the sentence, phrase, sign, screenshot, or note that made the word worth saving.</p>
+          </article>
+          <article class="rounded-[28px] border border-white/70 bg-white/80 p-6 shadow-soft backdrop-blur">
+            <h3 class="text-xl font-semibold tracking-tight text-slate-950">Study meaning, not just translation</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Review explanations and examples that make idioms, tone, and usage easier to remember.</p>
+          </article>
+          <article class="rounded-[28px] border border-white/70 bg-white/80 p-6 shadow-soft backdrop-blur">
+            <h3 class="text-xl font-semibold tracking-tight text-slate-950">Stay on your device</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">The app is designed around local analysis on supported Apple hardware, with optional model downloads during setup.</p>
+          </article>
         </div>
       </section>
 
-      <div class="section-heading">
-        <h2>Why people use it</h2>
-        <p>AI-Cabulary is built for learners who want to study real phrases with real context, not isolated dictionary lookups.</p>
-      </div>
-
-      <section class="grid">
-        <article class="card">
-          <h2>Keep the original context</h2>
-          <p>
-            Capture the sentence, phrase, sign, screenshot, or note that made the word interesting in
-            the first place.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Study meaning, not just translation</h2>
-          <p>
-            Review explanations and examples that make idioms, tone, and usage easier to remember.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Stay on your device</h2>
-          <p>
-            The app is designed around local analysis on supported Apple hardware, with optional model
-            downloads during setup.
-          </p>
-        </article>
-      </section>
-
-      <section class="card list-card">
-        <div class="section-heading">
-          <h2>Documentation</h2>
-          <p>Everything needed for TestFlight access, support, and App Store privacy requirements.</p>
+      <section class="mt-10 rounded-[32px] border border-white/70 bg-white/80 p-7 shadow-soft backdrop-blur sm:p-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.24em] text-brand-tealDark">Documentation</p>
+            <h2 class="mt-2 text-3xl font-semibold tracking-tight text-slate-950">Everything needed for TestFlight, support, and privacy.</h2>
+          </div>
+          <p class="max-w-2xl text-sm leading-7 text-slate-600">Use these pages for installs, contact information, and App Store compliance links.</p>
         </div>
-        <ul class="links">
-          <li><a href="testflight.html">TestFlight access and install guide</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
+
+        <div class="mt-6 grid gap-3 sm:grid-cols-3">
+          <a class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-sm font-semibold text-slate-700 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="testflight.html">TestFlight access and install guide</a>
+          <a class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-sm font-semibold text-slate-700 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="privacy.html">Privacy policy</a>
+          <a class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-sm font-semibold text-slate-700 transition hover:border-brand-teal/30 hover:text-brand-tealDark" href="support.html">Support</a>
+        </div>
       </section>
     </main>
   </body>
